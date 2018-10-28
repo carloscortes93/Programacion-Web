@@ -1,0 +1,22 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.title{
+	padding: auto;
+	margin-top: 20px;
+	margin-left: 630px;
+	margin-right: 630px;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+.inf-clas{
+  float: left;
+  width: 31%;
+  margin: 20px 1.15%;
+  height: 160px;
+  background-color: #B2D6FF;    /* Medium blue */
+}
