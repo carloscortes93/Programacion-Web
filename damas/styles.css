@@ -1,0 +1,164 @@
+body , html{
+		transition: 1s ease-in-out;
+		width: 100%;
+		height : 100%;
+		margin : 0 0;
+		padding: 0  0;
+}
+
+#ht{
+	display: flex;
+	justify-content: center;
+}
+
+.square{
+	float: left;
+	width: 80px;
+	height: 80px;
+}
+
+.white_square{
+	background-color:#F0D2B4;/*F0D2B4*/
+}
+.black_square{
+	background-color :#BA7A3A;/*BA7A3A*/
+}
+.clear_float{
+	clear: both;
+}
+
+.table{
+	position: relative;
+	width: 640px;
+	height: 640px;
+	margin: 0 auto;
+}
+
+.puntos{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 320px;
+	height: 780px;
+}
+
+.titulo{
+	display: flex;
+	justify-content: center;
+	width: 320px;
+	height: 50px;
+}
+
+.fichas{
+	width: 320px;
+	height: 680px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.rojas{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: black;
+	justify-content: center;
+	width: 160px;
+	height: 680px;
+}
+
+.negras{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: red; 
+	width: 160px;
+	height: 680px;
+}
+
+.ficha{
+	display: flex;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+}
+
+.rojo{
+	width: 62px;
+	height: 62px;
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+    background: red;
+    border: 3px solid white;
+}
+
+.negro{
+	width: 62px;
+	height: 62px;
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+    background: black;
+    border: 3px solid white;
+}
+
+.checker{
+	top:10px;
+	left:10px;
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	position: absolute;
+	border: 4px solid white;
+	cursor: pointer;	
+
+}
+
+.white_checker{
+	background: #CC0000;
+ -webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.black_checker{
+	background: #00001F;
+ -webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.black_background{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index:  7;
+	display: none;
+}
+
+@media only screen and (max-width : 640px){
+	.table{
+		width: 400px;
+		height: 400px;	
+	}
+
+	.square{
+		width: 50px;
+		height: 50px;
+	}
+
+	.checker{
+		width: 32px;
+		height: 32px;
+	}
+}
