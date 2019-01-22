@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Crear persona</title>	
+  </head>
+  <body>
+	<h2>Crear persona</h2>
+	
+	<form action="imprimir.php" method="post">
+		<p>Nombre: <input type="text" pattern=".{1,}" name="firstName" maxlength="50"/></p>
+		<p>Apellido: <input type="text" pattern=".{1,}" name="lastName" maxlength="50"/></p>
+		
+		<p>Sexo</p>
+		<p> Hombre: <input type="radio" name="sex" value="M" checked="checked"/>
+            Mujer: <input type="radio" name="sex" value="F" /> </p>
+		
+		<p>Edad: <input type="number" name="age" min="0"></textarea> </p>
+		
+		<p>Dirección: <textarea rows="1" cols="50" name="address" maxlength="300"></textarea> </p>
+		
+		<p><button type="submit"> Guardar </button> 
+		   <button type="reset"> Reiniciar </button>
+		</p>
+	</form>
+	
+	<a href="index.html">Volver al menu</a>
+  </body>
+</html>
